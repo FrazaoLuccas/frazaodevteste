@@ -1,0 +1,627 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Recursive', sans-serif;
+    /* background-color: blue; */
+}
+
+.center{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.clear{
+    clear: none;
+}
+body{
+    overflow-x: hidden;
+}
+
+
+/* inicio menu mobile */
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* inicio mobile */
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    padding: 10px 2%;
+    margin: 0 auto;
+    align-items: center;
+    
+}
+
+.logo{
+    width: 100%;
+    max-width: 210px;
+    height: 40px;
+    /* border: 2px solid black; */
+    background-image: url('../img/Logo_Horizontal.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.nav-list ul{
+    display: flex;
+    list-style: none;
+    color: black;
+    font-size: 1.3rem;
+}
+
+.nav-item{
+    margin: 0 15px;
+    color: black;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+
+  
+
+/* inicio de sobre mim */
+.about-me{
+    background-color: black;
+    height: 550PX;
+    
+}
+
+.about-me > .center{
+    display: flex;
+    max-width: 1100PX;
+    padding-top: 40PX;
+    justify-content: space-between;
+    
+}
+
+
+.aboutText{
+color: white;
+width: 100%;
+max-width: 450PX;
+height: 30rem;
+display: flex;
+justify-content: center;
+flex-direction: column;
+padding-left: 5%;
+
+}
+
+.aboutText h2{
+    font-size: 40px;
+   
+}
+
+.aboutText p{
+    font-size: 1.0rem;
+    max-width: 320px;
+    margin-top: 15PX;
+   
+}
+
+.tellME{
+    width: 100%;
+    max-width: 350PX;
+    margin-top: 30PX;
+    height: 3REM;
+    /* border: 2PX SOLID BLUE; */
+    background-color: #00DD90;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    padding-left: 25px;
+    color: black;
+    
+}
+
+.seta{
+    background-image: url('/img/seta.png');
+    width: 4rem;
+    height: 4rem;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: -8px;
+    /* border: 2px solid black; */
+
+}
+
+.tellME > p{
+margin-top: -1px;
+font-weight: 800;
+}
+
+.aboutIMG{
+    /* border: 2PX SOLID BLUE; */
+    width: 100%;
+    max-width: 500px;
+    margin-top: -20px;
+    background-image: url('/img/Grupo\ 70.png');
+    background-size: 100% 100%;
+    opacity: 1;
+    /* border: 2px solid white; */
+    display: flex;
+    position: relative;
+    margin-left: 1%;
+    justify-content: center;
+    margin-top: 20px;
+
+
+}
+
+.my-picture{
+    background-color:rgba(0, 0, 0, 1);
+    position: absolute; 
+    border-radius: 220px;
+    background-image: url('../img/Lucas\ Frazao.jpg');
+    background-size: cover;
+    width: 100%;
+    max-width: 350px;
+    height: 340px;
+    margin-top: 60px;
+    /* top: 25%;
+    left: 53.5%; */
+
+}
+
+
+footer{
+height: 90px;
+background-color: #0F23FE;
+display: flex;
+align-items: center;
+}
+
+footer > .center{
+    display: flex;
+    /* border: 2px solid white; */
+    max-width: 1000px;
+    align-items: center;
+}
+
+footer > .center > .logotip{
+        width: 20%;
+        min-width: 150px;
+        height: 60px;
+        /* border: 2px solid black; */
+        background-image: url('/img/Logo_Horizontal_06.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+}
+
+
+.budget{
+    border: 2px solid black;
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    padding: 0px;
+    padding-top: 1px;
+    align-items: center;
+    max-width: 170px;
+   margin-left: 50%;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: #00F2F6;
+}
+
+.media{
+    border: 2px solid white;
+    border-radius: 30px;
+    background-color: white;
+    height: 50px;
+    width:55px;
+    margin-left: 3%;
+    background-image: url('/img/Grupo\ 26.png');
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
+.media:nth-of-type(2){
+    background-image: url('/img/Grupo\ 27.png');
+
+}
+
+
+
+
+
+
+
+/* media query */
+
+@media screen and (max-width: 1014px) {
+   
+
+/* inicio sabout me */
+
+
+
+.aboutText{
+max-width: 390PX;
+padding-left: 1%;
+
+}
+
+
+.about-me{
+    padding: 0 1%;
+}
+   
+.about-me > .center{
+    max-width: 900px;
+}
+
+
+.tellME{
+    max-width: 320PX;
+}
+
+
+
+.tellME > p{
+margin-top: -1px;
+}
+
+.aboutIMG{
+    /* border: 2PX SOLID BLUE; */
+    max-width: 500px;
+    background-repeat: no-repeat;
+    justify-content: center;
+    padding-right: 2%;
+    margin-left: 0%;
+}
+
+.my-picture{
+    width: 100%;
+    max-width: 290px;
+    height: 290px;
+    margin-top: 20%;
+  
+}
+
+/* inicio do footer */
+
+
+footer > .center{
+    display: flex;
+    /* border: 2px solid white; */
+    max-width: 800px;
+    align-items: center;
+}
+
+
+.budget{
+
+    width: 100%;
+    height: 30px;
+    padding: 0px;
+    padding-top: 1px;
+    max-width: 170px;
+   margin-left: 40%;
+    font-size: 1.2rem;
+  
+}
+
+.media{
+    border: 2px solid white;
+    border-radius: 30px;
+    height: 45px;
+    width:45px;
+    margin-left: 3%;
+  
+}
+
+
+ 
+
+    }
+
+
+
+    
+@media screen and (max-width: 820px) {
+ /* inicio mobile */
+    
+.nav-item{
+    display: none;
+}
+
+.mobile-menu-icon{
+    display: block;
+   
+}
+
+.mobile-menu-icon button{
+    border: none;
+    
+}
+
+.mobile-menu-icon button .icon{
+    width: 35px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+
+
+.mobile-menu ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+    width: 100%;
+    position: absolute;
+    top: 53px;
+    left: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+.mobile-menu .nav-item{
+    display: block;
+    padding-top: 1.2rem;
+}
+
+.open{
+    display: block;
+    width: 5px;
+    height: 5px;
+}
+/* inicio about */
+
+.aboutText{
+    max-width: 390PX;
+    padding-left: 1%;
+    
+    }
+    
+    
+    .about-me{
+        padding: 0 1%;
+    }
+       
+    .about-me > .center{
+        max-width: 900px;
+    }
+    
+    
+    .tellME{
+        max-width: 320PX;
+    }
+    
+    
+    
+    .tellME > p{
+    margin-top: -1px;
+    }
+    
+    .aboutIMG{
+        /* border: 2PX SOLID BLUE; */
+        max-width: 500px;
+        
+        background-repeat: no-repeat;
+        background-size: 100% 92%;
+        justify-content: center;
+        padding-right: 2%;
+        margin-left: 0%;
+    }
+    
+    .my-picture{
+        width: 100%;
+        max-width: 270px;
+        height: 270px;
+        margin-top: 25%;
+        margin-left: 3%
+      
+    }
+
+
+    
+footer > .center{
+    display: flex;
+    /* border: 2px solid white; */
+    max-width: 700px;
+    align-items: center;
+}
+
+
+.budget{
+    width: 100%;
+    height: 30px;
+    padding: 0px;
+    padding-top: 1px;
+    max-width: 170px;
+   margin-left: 35%;
+    font-size: 1.2rem;
+  
+}
+
+.media{
+    border: 2px solid white;
+    border-radius: 30px;
+    height: 45px;
+    width:45px;
+    margin-left: 3%;
+  
+}
+
+}
+
+
+
+
+
+/* quando coloca uym ; o media n funciona mais */
+
+
+    
+@media screen and (max-width: 700px) {
+    
+    
+
+
+
+    /* sobre o about me */
+
+    
+    .about-me{
+        padding: 20px 1%;
+        height: 900px;
+        /* border: 2px solid white; */
+    }
+       
+    .about-me > .center{
+        max-width: 900px;
+        padding-top: 30px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+    
+    .tellME{
+        max-width: 320PX;
+    }
+    
+   
+    
+    .tellME > p{
+    margin-top: -1px;
+    }
+
+
+    .aboutText{
+        max-width: 330PX;
+        padding-left: 1%;
+        /* border: 2px solid white; */
+        order: 2;
+        height:29rem;
+}
+
+.aboutText h2{
+    font-size: 2.4rem;
+    
+   
+}
+
+.aboutText p{
+    font-size: 1.1rem;
+    max-width: 320px;
+    margin-top: 15PX;
+   
+}     
+    
+    .aboutIMG{
+        /* border: 2PX SOLID BLUE; */
+        height: 350px;
+        max-width: 350px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        justify-content: center;
+        padding-right: 2%;
+        margin-left: 0%;
+        align-items: center;
+        background-image: url('../img/Grupo\ 10.png');
+        order: 1;
+
+    }
+
+
+
+    .my-picture{
+        width: 100%;
+        max-width: 250px;
+        height: 250px;
+        margin-top: 0%;
+        margin-left: 0;
+      
+    }
+
+    
+    .tellME{
+        max-width: 320PX;
+    }
+    
+    
+    
+    .tellME > p{
+    margin-top: -1px;
+    font-size: 1rem;
+    font-weight: 800;
+    }
+    
+    
+.seta{
+
+    width: 4rem;
+    height: 4rem;
+   
+    /* border: 2px solid black; */
+
+}
+
+    /* inicio do footer */
+   
+    
+    
+footer > .center{
+    display: flex;
+    /* border: 2px solid white; */
+    max-width: 350px;
+    align-items: center;
+}
+
+footer > .center > .logotip{
+    min-width: 120px;
+
+}
+
+.budget{
+    width: 100%;
+    height: 25px;
+    padding: 0px;
+    padding-top: 2px;
+    max-width: 100px;
+   margin-left: 10%;
+    font-size: 0.8rem;
+  
+}
+
+.media{
+    border: 2px solid white;
+    border-radius: 30px;
+    height: 35px;
+    width:35px;
+    margin-left: 3%;
+  
+}
+    
+
+};
+
+
+
+
+
+ 
+
